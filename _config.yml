@@ -1,9 +1,10 @@
 ### your site title here
 
-title: Hagura - Light!
-baseurl: /hagura # name of the repository
+title: What This MUSIC!
+description: A description about What This MUSIC!
+baseurl:  # name of the repository
 email: your@email.com
-
+url: https://whatthismusic.com
 
 
 highlighter: rouge
@@ -12,10 +13,10 @@ markdown: kramdown
 
 
 # Tracker
-analytics: UA-83979019-1
+#analytics: UA-83979019-1
 
 # Comments
-disqus-shortname: webjeda-demo
+#disqus-shortname: webjeda-demo
 
 
 #optimization
@@ -40,3 +41,5 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-org
+  - jekyll-feed
