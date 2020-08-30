@@ -3,10 +3,12 @@ layout: default
 ---
 <h1 class="headline">{{site.title}}</h1>
 <div class="article-list">
-{% for post in site.posts %}
+	{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+	{% for post in site.posts %}
     <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+	  <span class="post-meta">{{ post.date | date: date_format }}</span>
     <p>{{post.excerpt | strip_html}}</p>
-{% endfor %}
+		{% endfor %}
 </div>
 <div id="subscribe-rss">
 	Subscribe <a href="{{ 'feed.xml' | relative_url }}">via RSS</a>.

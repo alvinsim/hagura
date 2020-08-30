@@ -3,7 +3,7 @@
 #+OPTIONS: toc: nil
 #+TODO: TODO(t) DOING(g) | DONE(D) CANCEL(C)
 
-* Tasks [33%]
+* Tasks [41%]
 ** TODO Update footer to show email and social media links          :@footer:
 ** DONE Add and implement jekyll-feed                            :feed:@home:
 ** TODO Realign the top menu to align to the right             :menu:@header:
@@ -11,7 +11,7 @@
 ** TODO Update "About" page                                     :page:@about:
 ** DONE Change the icon of the "<" Home button or remove it     :button:home:
 ** TODO Find alternative chat system then Disqus                :chat:disqus:
-** TODO Add published date for each posts listed in =index.html= :@home:posts:date:
+** DONE Add published date for each posts listed in =index.html= :@home:posts:date:
 ** TODO Add favicon                                                 :favicon:
 ** DONE Update the footer to show powered by Jekyll                 :@footer:
 ** TODO Create new email account at hover or gmail      :email:@hover:@gmail:

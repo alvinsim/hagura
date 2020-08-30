@@ -18,6 +18,8 @@ markdown: kramdown
 # Comments
 #disqus-shortname: webjeda-demo
 
+# Date format
+date_format: "%b %-d, %Y"
 
 #optimization
 #compress.html
