@@ -177,7 +177,7 @@ footer {
 
 /* Footer copyrights */
 .copy {
-    color: #aaa;
+  color: #aaa;
 }
 
 /* Horizontal Divider */
@@ -187,10 +187,18 @@ footer {
 
 #subscribe-rss {
 	font-size: medium;
-	padding-top: 50px;
+	padding-top: $spacing-unit;
 }
 
 .post-meta {
 	color: #828282;
 	font-size: $small-font-size;
+}
+
+div.links {
+	float: right;
+}
+
+div.pagination {
+	padding-top: $spacing-unit;
 }

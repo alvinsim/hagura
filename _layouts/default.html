@@ -9,6 +9,7 @@ layout: compress
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 <!--   <link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans" rel="stylesheet"> -->
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	{%- feed_meta -%}
   {% seo %}
 </head>
@@ -18,7 +19,12 @@ layout: compress
     <a href="{{site.baseurl}}/"><div class="home"></div></a>
 		<div class="links">
 			<a href="{{site.baseurl}}/about/">About</a>
-			<a href="{{site.baseurl}}/contact">Contact</a>
+			<!-- <a href="{{site.baseurl}}/contact">Contact</a> -->
+				{% for item in site.data.social.links %}
+	        <a href="{{ item.link }}" target="_blank" id="{{ item.icon }}">
+		        <i class="fa fa-{{ item.icon }}"></i>
+	        </a>
+	      {% endfor %}
 		</div>
   </header>
 
@@ -28,14 +34,7 @@ layout: compress
     </article>
     </main>
 
-	<footer>
-    <!-- <div class="links">
-				 <a href="{{site.baseurl}}/about/">About</a>
-				 <a href="{{site.baseurl}}/contact/">Contact</a>
-				 <a class="theme" onclick="theme()">Dark/Light</a>
-				 </div> -->
-    <p class="copy"><small>{% include copyright.html %} | Made with <a href="https://jekyllrb.com/">Jekyll</a></small></p>
-  </footer>
-{% include analytics.html %}
+	{% include footer.html %}
+  {% include analytics.html %}
 </body>
 </html>

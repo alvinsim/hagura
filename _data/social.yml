@@ -1,0 +1,7 @@
+# Contact, rss and social media links
+# The icon names can be found at https://fontawesome.com
+
+links:
+  - {icon: 'envelope', link: 'mailto:sim.alvin@gmail.com'}
+  - {icon: 'rss', link: '/feed.xml'}
+  - {icon: 'twitter', link: 'https://www.twitter.com/whatthismusic'}

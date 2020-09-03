@@ -33,6 +33,9 @@ compress_html:
   profile: false
   startings: []
 
+# Pagination
+paginate: 5
+paginate_path: "/blog/page/:num"
 
 sass:
  style: compressed
@@ -42,6 +45,6 @@ exclude:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-org
   - jekyll-feed
+  - jekyll-paginate
