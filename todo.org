@@ -3,7 +3,7 @@
 #+OPTIONS: toc: nil
 #+TODO: TODO(t) DOING(g) | DONE(D) CANCEL(C)
 
-* Tasks [47%]
+* Tasks [45%]
 ** DONE Update footer to show email and social media links          :@footer:
 ** DONE Add and implement jekyll-feed                            :feed:@home:
 ** DONE Realign the top menu to align to the right             :menu:@header:
@@ -25,3 +25,7 @@
 ** TODO Add search                                                   :search:
 ** TODO Add sitemap                                                :@sitemap:
 ** DONE Add pagination on the home page                    :@home:pagination:
+** TODO Move site title similar to own site                  :@default:title:
+** TODO Remove floating "Home" button                  :@default:home:button:
+** DONE Display tags in a post                                   :@post:tags:
+- Refer to http://longqian.me/2017/02/09/github-jekyll-tag/

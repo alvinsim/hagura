@@ -71,7 +71,7 @@ pre {
 }
 
 code {
-  padding: 0.1em;
+  padding: 0.2em;
 }
 
 blockquote {
@@ -182,8 +182,9 @@ footer {
 }
 
 .post-meta {
-	color: #828282;
+	color: $grey-color;
 	font-size: $small-font-size;
+	font-style: italic;
 }
 
 div.links-bottom {
@@ -194,6 +195,20 @@ div.pagination {
 	padding-top: $spacing-unit;
 }
 
-h3.tag-headline {
+h1.tag-headline, h2.tag-headline {
 	text-transform: none;
+}
+
+code.tag {
+	background-color: $brand-color;
+	color: lighten($background-color, 50%);
+}
+
+li.tag-list {
+	padding-bottom: 0.6em;
+	list-style: none;
+}
+
+.tag-cloud {
+	padding: $spacing-unit 0;
 }

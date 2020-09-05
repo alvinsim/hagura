@@ -5,8 +5,12 @@ layout: default
 <div class="article-list">
 	{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 	{% for post in paginator.posts %}
-    <h2><a href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a></h2>
-	  <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h2>
+		  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	  </h2>
+	  <span class="post-meta">
+			<small>{{ post.date | date: date_format }} by {{ post.author }}</small>
+		</span>
     <p>{{ post.excerpt | strip_html }}</p>
 		{% endfor %}
 </div>
@@ -15,10 +19,7 @@ layout: default
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
   	{% if paginator.previous_page %}
-  	  <a href="{{ paginator.previous_page_path }}" class="previous">
-  		  <!-- <i class="fas fa-angle-left"></i> -->
-  			Previous
-  	  </a>
+  	  <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
   	{% endif %}
 
 		{% for page in (1..paginator.total_pages) %}
@@ -32,10 +33,7 @@ layout: default
 		{% endfor %}
 
 		{% if paginator.next_page %}
-  	  <a href="{{ paginator.next_page_path }}" class="next">
-       <!-- <i class="fas fa-angle-right"></i> -->
-  			Next
-  		</a>
+  	  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   	{% endif %}
   </div>
 {% endif %}

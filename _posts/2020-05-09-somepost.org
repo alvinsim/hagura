@@ -1,6 +1,6 @@
 #+TITLE: Jekyll and Org together
 #+LAYOUT: post
-#+TAGS: jekyll org-mode "tag with spaces"
+#+TAGS: "abc" "jekyll" "org-mode" "tag with spaces"
 #+AUTHOR: Alvin Sim
 #+DATE: 2020-08-27
 

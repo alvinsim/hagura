@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: What This MUSIC!
 permalink: /tags/
 content-type: eg
@@ -17,16 +17,23 @@ content-type: eg
 }
 </style>
 
-<h1>By Tags</h1>
 <main>
-    {% for tag in site.tags %}
-      <h3 class="tag-headline" id="{{ tag | first }}">{{ tag | first }}</h3>
+  {% include site_tags_cloud.html %}
+
+  {% for tag in site.tags %}
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <h2 class="tag-headline" id="{{ tag_name }}">
+	  <i class="fa fa-tags"></i>&nbsp;Tag: <code class="tag">{{ tag_name }}</code>
+	</h2>
+	<ul>
       {% for post in tag.last %}
-        <li id="category-content" style="padding-bottom: 0.6em; list-style: none;">
-		  <a href="{{post.url}}">{{ post.title }}</a>
+        <li class="tag-list">
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      <span class="post-meta">
+		    <small>{{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</small>
+		  </span>
 	    </li>
       {% endfor %}
-    {% endfor %}
-    <br/>
-    <br/>
+    </ul>
+  {% endfor %}
 </main>
