@@ -206,7 +206,7 @@ header {
 }
 
 #logo a {
-	color: $brand-color;
+	color: darken($brand-color, 15%);;
 }
 
 /* Footer copyrights */

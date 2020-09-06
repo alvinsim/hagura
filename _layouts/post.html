@@ -15,8 +15,12 @@ layout: default
 	</span>
 {% endif %}
 
+{%- assign author = post.author | default: "" -%}
+
 <div id="post-meta">
-	<small>{{ page.date | date: '%B %d, %Y' }} by {{ post.author }}</small>
+	<small>
+		{{ page.date | date: '%B %d, %Y' }} {% if author != null and author != "" %} by {{ author }} {% endif%}
+	</small>
 </div>
 
 {{ content }}

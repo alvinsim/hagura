@@ -5,11 +5,14 @@ layout: default
 <div class="article-list">
 	{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 	{% for post in paginator.posts %}
+	  {%- assign author = post.author | default: "" -%}
     <h2>
 		  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	  </h2>
 	  <div id="post-meta">
-			<small>{{ post.date | date: date_format }} by {{ post.author }}</small>
+			<small>
+				{{ post.date | date: date_format }} {% if author != null and author != "" %} by {{ author }} {% endif%}
+			</small>
 		</div>
     <p>{{ post.excerpt | strip_html }}</p>
 		{% endfor %}
