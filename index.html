@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<h1 class="headline">{{ site.title }}</h1>
+<!-- <h1 class="headline">{{ site.title }}</h1> -->
 <div class="article-list">
 	{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 	{% for post in paginator.posts %}
     <h2>
 		  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	  </h2>
-	  <span class="post-meta">
+	  <div id="post-meta">
 			<small>{{ post.date | date: date_format }} by {{ post.author }}</small>
-		</span>
+		</div>
     <p>{{ post.excerpt | strip_html }}</p>
 		{% endfor %}
 </div>

@@ -23,6 +23,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 $on-palm:          600px;
+$on-smaller-palm:  420px;
 $on-laptop:        1000px;
 
 
@@ -35,9 +36,9 @@ $on-laptop:        1000px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 
@@ -48,5 +49,3 @@ $on-laptop:        1000px;
         "style",
         "google-fonts"
 ;
-
-

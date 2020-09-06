@@ -4,13 +4,11 @@ title: What This MUSIC!
 description: A description about What This MUSIC!
 baseurl:  # name of the repository
 email: your@email.com
-url: https://whatthismusic.com
-
+url: https://www.whatthismusic.com
 
 highlighter: rouge
 markdown: kramdown
 ### exclude the instructions / write-up in the README.md
-
 
 # Tracker
 #analytics: UA-83979019-1
@@ -48,8 +46,9 @@ exclude:
 - README.md
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-org
   - jekyll-feed
+  - jekyll-org
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll/tagging

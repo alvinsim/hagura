@@ -3,7 +3,7 @@
 #+OPTIONS: toc: nil
 #+TODO: TODO(t) DOING(g) | DONE(D) CANCEL(C)
 
-* Tasks [45%]
+* Tasks [68%]
 ** DONE Update footer to show email and social media links          :@footer:
 ** DONE Add and implement jekyll-feed                            :feed:@home:
 ** DONE Realign the top menu to align to the right             :menu:@header:
@@ -17,15 +17,15 @@
 ** TODO Create new email account at hover or gmail      :email:@hover:@gmail:
 ** TODO Permalink                                                 :permalink:
 - Refer to [[https://superdevresources.com/share-buttons-jekyll]]
-** TODO Share posts to social media                :@post:socialmedia:button:
-** TODO Create new github/gitlab account to use pages       :@github:@gitlab:
-** TODO Show only published posts                             :@post:publish:
+** DONE Create new github/gitlab account to use pages       :@github:@gitlab:
+** DOING Share posts to social media               :@post:socialmedia:button:
+** DONE Show only published posts                             :@post:publish:
 ** DONE Add tag page                                              :@page:tag:
 - Refer to https://jekyllrb.com/docs/posts/ and https://jekyll-themes.com/simply-jekyll/
-** TODO Add search                                                   :search:
-** TODO Add sitemap                                                :@sitemap:
+** DONE Add sitemap                                                :@sitemap:
 ** DONE Add pagination on the home page                    :@home:pagination:
-** TODO Move site title similar to own site                  :@default:title:
-** TODO Remove floating "Home" button                  :@default:home:button:
+** DONE Move site title similar to own site                  :@default:title:
+** DONE Remove floating "Home" button                  :@default:home:button:
 ** DONE Display tags in a post                                   :@post:tags:
 - Refer to http://longqian.me/2017/02/09/github-jekyll-tag/
+** TODO Add search                                                   :search:
