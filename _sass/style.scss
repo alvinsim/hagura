@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	color: $brand-color;
 	text-decoration: none;
-	&:hover{
+	&:hover {
 		color: $text-color;
 	}
 }
@@ -85,7 +85,7 @@ blockquote {
 }
 
 .headline, .post-headline {
-  font-size: 2.8em;
+  font-size: 2.0em;
   margin-bottom: 0.5em;
 
   @include media-query($on-palm) {
@@ -177,6 +177,14 @@ header {
   margin-right: 0.5em;
 }
 
+#envelope a:hover {
+	background-color: #fff;
+}
+
+#twitter a:hover {
+	background-color: #fff;
+}
+
 #links-bottom {
 
 }
@@ -200,13 +208,13 @@ header {
 	}
 }
 
-#logo span.logo-em {
+span.logo-em {
 	font-style: italic;
 	font-weight: bold;
 }
 
 #logo a {
-	color: darken($brand-color, 15%);;
+	color: darken($brand-color, 18%);;
 }
 
 /* Footer copyrights */

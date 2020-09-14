@@ -1,20 +1,31 @@
 ### your site title here
 
 title: What This MUSIC!
-description: A description about What This MUSIC!
+description: What This MUSIC! is a platform I created to everything about music -- the songs, musicians, and/or the stories that come with it.
 baseurl:  # name of the repository
-email: your@email.com
+email: whatthismusic@outlook.com
 url: https://www.whatthismusic.com
+tagline: What This MUSIC! is a platform I created to share everything about music -- the songs, musicians, and/or the stories that come with it.
+author: Alvin Sim
+twitter:
+  username: whatthismusic
+  card: summary
+logo: /images/android-chrome-512x512.png
+social:
+  name: What This MUSIC!
+  links:
+    - https://twitter.com/whatthismusic
+    - https://www.facebook.com/whatthismusic
 
 highlighter: rouge
 markdown: kramdown
 ### exclude the instructions / write-up in the README.md
 
 # Tracker
-#analytics: UA-83979019-1
+analytics: UA-177907667-1
 
 # Comments
-#disqus-shortname: webjeda-demo
+disqus-shortname: whatthismusic
 
 # Date format
 date_format: "%b %-d, %Y"

@@ -1,7 +1,17 @@
 ---
 layout: default
+comments: true
 ---
-<h1 class="post-headline">{{page.title}}</h1>
+
+<h1 class="post-headline">{{ page.title }}</h1>
+
+{%- assign author = post.author | default: "" -%}
+
+<div id="post-meta">
+	<small>
+		{{ page.date | date: '%B %d, %Y' }} {% if author != null and author != "" %} by {{ author }} {% endif%}
+	</small>
+</div>
 
 <!-- Display tags -->
 {% if page.tags.size > 0 %}
@@ -14,14 +24,6 @@ layout: default
 		{% endfor %}
 	</span>
 {% endif %}
-
-{%- assign author = post.author | default: "" -%}
-
-<div id="post-meta">
-	<small>
-		{{ page.date | date: '%B %d, %Y' }} {% if author != null and author != "" %} by {{ author }} {% endif%}
-	</small>
-</div>
 
 {{ content }}
 {% include share_bar.html %}

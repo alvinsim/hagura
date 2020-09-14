@@ -2,6 +2,7 @@
 # The icon names can be found at https://fontawesome.com
 
 links:
-  - {icon: 'envelope', link: 'mailto:sim.alvin@gmail.com'}
   - {icon: 'rss', link: '/feed.xml'}
-  - {icon: 'twitter', link: 'https://www.twitter.com/whatthismusic'}
+  - {icon: 'envelope', link: 'mailto:whatthismusic@outlook.com'}
+  - {icon: 'twitter', link: 'https://twitter.com/whatthismusic'}
+  - {icon: 'facebook', link: 'https://www.facebook.com/whatthismusic'}

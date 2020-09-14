@@ -11,11 +11,15 @@ layout: compress
 	<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="/images/fav.ico?">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="/images/android-chrome-192x192.png">
+	<link rel="icon" sizes="512x512" href="/images/android-chrome-512x512.png">
 	{%- feed_meta -%}
   {% seo %}
 </head>
 <body style="background-color: rgb(255, 255, 255)">
- <script async src="{{ site.baseurl }}/js/theme.min.js"></script>
+  <script async src="{{ site.baseurl }}/js/theme.min.js"></script>
   <header>
     <!-- <a href="{{ site.baseurl }}/"><div class="home"></div></a> -->
 		<div id="logo">
@@ -28,11 +32,11 @@ layout: compress
 		</div>
   </header>
 
-    <main>
+  <main>
     <article>
-    {{ content }}
+      {{ content }}
     </article>
-    </main>
+  </main>
 
 	{% include footer.html %}
   {% include analytics.html %}
