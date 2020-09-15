@@ -16,9 +16,9 @@ There is something that I do differently now when I like a certain song or music
 
 **What This _MUSIC!_** is a platform I created to share everything related to music -- the songs, musicians, and/or the stories that come with it. By sharing, it is one of the ways to support the works of these amazing and talented musicians and pay tribute to them and their work.
 
-Another point is, I always believe that music heals the soul. On tough and trying days, I would usually lie down, close my eyes and listen to songs that will lift up my spirits.
+Another point is, I always believe that music heals the soul. On tough and trying days, I would usually lie down, close my eyes and let the music do its magic.
 
-If you like any of the articles here, do like, share and subscribe to the RSS feed. Also, share with me your stories and musics that you enjoy listening to.
+If you like any of the articles here, do like, share and subscribe to the RSS feed. Also, do share with me your stories and musics that you enjoy listening to.
 
 --
 <br/>
